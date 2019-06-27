@@ -9,7 +9,18 @@
 #define continua continue
 #define faz      do
 
+// io
+// TODO: deviamos ter um header para cada traducao de header. 
+// por exemplo se quisermos traduzir o que esta no iostream, deviamos ter um iostream-pt.h e fazer include dele aqui
+#define imprime  printf
+#define fimprime fprintf
+#define scaneia  scanf
+#define fscaneia fscanf
+#define ficheiro FILE
+#define fecha    fclose
 
-// Multi-fios de execucao
+// Multi-execucao
 #define fio            thread
+#define cadeado        lock
+#define cadeado_unico  unique_lock
 #define exclusao_mutua mutex
